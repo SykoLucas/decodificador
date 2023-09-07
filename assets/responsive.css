@@ -1,0 +1,202 @@
+/* ---------------- 360px ----------------*/
+@media only screen and (max-width: 360px) {
+  .header {
+    justify-content: flex-start;
+    padding-left: 2rem;
+  }
+
+  .btn-small,
+  .btn-small:hover {
+    width: 4.5rem;
+  }
+}
+
+/* ---------------- 470px ----------------*/
+  @media only screen and (max-width: 29.38em) {
+    html {
+      font-size: 50%;
+    }
+  
+    .grid {
+      padding: 2rem 1rem;
+      height: 77vh;
+    }
+  
+    .header {
+      height: 10vh;
+    }
+  
+    .footer {
+      flex-direction: column;
+      height: 13vh;
+    }
+  
+    .footer__logo {
+      height: 3.5rem;
+    }
+  
+    .footer__info {
+      font-size: 1rem;
+    }
+  }
+
+/* ---------------- 650px ----------------*/
+    @media only screen and (max-width: 40.62em) {
+        .theme {
+          right: 1rem;
+          top: 0.5rem;
+        }
+        .theme__button {
+          width: 4rem;
+          height: 2rem;
+          padding: 0.3rem;
+        }
+      
+        .theme__icon {
+          width: 1.5rem;
+          height: 1.5rem;
+          fill: var(--color-grey-light-2);
+        }
+      
+        .theme__button:after {
+          top: 0.25rem;
+          width: 1.5rem;
+          height: 1.5rem;
+          left: 0.3rem;
+        }
+      
+        .theme__checkbox:checked + .theme__button:after {
+          left: calc(100% - 0.3rem);
+        }
+      
+        .btn-small,
+        .btn-small:hover {
+          max-width: 4.5rem;
+        }
+      
+        .btn-medium {
+          padding: 0.5rem;
+        }
+      
+        .btn-medium__icon {
+          height: 2rem;
+          width: 2rem;
+        }
+      
+        .input-area__textarea,
+        .output-area__textarea {
+          padding: 5.2rem 2rem 2rem 2rem;
+        }
+      }
+
+/* ---------------- 900px ----------------*/
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 56.25%;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 0 1fr;
+      padding: 2rem 4rem;
+    }
+  
+    .btn-small,
+    .btn-medium {
+      color: var(--color-grey-light-1);
+      max-width: 30rem;
+      background-color: var(--color-primary);
+    }
+  
+    .btn-small:hover,
+    .btn-medium:hover {
+      background-color: var(--color-primary-dark);
+      border-color: var(--color-primary-dark);
+    }
+  
+    .btn-medium:hover {
+      animation: none;
+    }
+  
+    .copy.btn-small,
+    .copy.btn-small:hover {
+      background-color: green;
+      border-color: green;
+    }
+  
+    .change-area {
+      transform: rotate(90deg);
+      z-index: 100;
+      transition: all 0.5s;
+    }
+  
+    .no-result.input-area {
+      transform: translateX(0);
+    }
+  
+    .no-result.output-area {
+      transform: translateX(0) translateY(-80%);
+    }
+  
+    .output-area,
+    .input-area {
+      width: 100%;
+    }
+  
+    .output-area,
+    .output__border {
+      clip-path: polygon(
+        0% 0%,
+        0% 0%,
+        0% 0%,
+        0% 0%,
+        100% 0,
+        100% 5%,
+        100% 95%,
+        95% 95%,
+        95% 100%,
+        5% 100%,
+        0 100%,
+        0% 95%
+      );
+    }
+  
+    .input-area,
+    .input__border {
+      clip-path: polygon(
+        0% 5%,
+        5% 5%,
+        5% 0%,
+        95% 0%,
+        100% 0,
+        100% 0%,
+        100% 100%,
+        100% 100%,
+        100% 100%,
+        0% 100%,
+        0 100%,
+        0% 100%
+      );
+    }
+  
+    .footer__author {
+      gap: 1.5rem;
+    }
+  
+    .footer__info {
+      font-size: 1.1rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+/* ---------------- 1000px ----------------*/
+@media only screen and (max-width: 62.5em) {
+    .grid {
+      padding: 1rem;
+    }
+  
+    .input-area,
+    .output-area {
+      width: 95%;
+    }
+  }

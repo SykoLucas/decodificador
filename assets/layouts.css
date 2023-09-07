@@ -1,0 +1,126 @@
+/* CORPO */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    height: 75vh;
+    max-width: 200rem;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+}
+
+/* FERRAMENTAS */
+.menu__tools {
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+}
+
+.tools__list {
+  position: relative;
+
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+/* BOTÕES */
+.btn-small {
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  background-color: var(--color-grey-light-1);
+  padding: 0.5rem 1rem;
+
+  display: flex;
+  width: auto;
+  max-width: 4.5rem;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.btn-small:hover {
+  max-width: 30rem;
+}
+
+.btn-small,
+.btn-medium {
+  color: var(--color-primary);
+  border: 3px solid var(--color-primary);
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0.2rem 0.8rem 0 rgba(99, 99, 99, 0.2);
+}
+
+.btn-small:hover,
+.btn-medium:hover {
+  background-color: var(--color-primary);
+  color: var(--color-grey-light-1);
+}
+
+.btn-small:active,
+.btn-medium:active {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+
+.btn-small__content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-small__icon {
+  height: 2rem;
+  width: 2rem;
+  fill: #ec9f10;
+}
+
+.btn-medium {
+  background-color: var(--color-grey-light-2);
+  padding: 1rem;
+  transition: all 0.3s;
+}
+
+.btn-medium:hover {
+  animation: input-pointer 0.7s infinite;
+}
+
+@keyframes input-pointer {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.btn-medium__icon {
+  display: block;
+  height: 2.25rem;
+  width: 2.25rem;
+  fill: currentColor;
+}
+
+.copy {
+  color: var(--color-grey-light-2);
+  background-color: green;
+  border-color: green;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  cursor: default;
+
+  display: none;
+}
+
+.copy.btn-small:hover {
+  background-color: green;
+  border-color: green;
+}

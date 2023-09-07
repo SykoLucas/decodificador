@@ -1,0 +1,52 @@
+/* ROOT CORES */
+:root {
+    --color-text: #f5f4f4;
+    
+    --color-primary: #ad1616;
+    --color-primary-dark: #ab1d18e8;
+  
+    --color-grey-light-1: #f8f9fae8;
+    --color-grey-light-2: #f1f3f5e5;
+    --color-grey-light-3: #adb5bd;
+  
+    --color-grey-dark-1: #9299a1;
+    --color-grey-dark-2: #495057;
+    --color-grey-dark-3: #212529;
+  
+    --background-footer: linear-gradient(to bottom, #530f0f, #492005);
+}
+
+.dark-theme {
+    --color-primary: #d61c1c;
+    --color-primary-dark: #c21919ef;
+  
+    --color-grey-light-1: #0e0e0e;
+    --color-grey-light-2: #0f0f0f;
+    --color-grey-light-3: #868e96;
+  
+    --color-grey-dark-2: #adb5bd;
+    --color-grey-dark-3: #c6cbd1;
+  }
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  *::selection {
+    outline: none;
+    background-color: var(--color-primary);
+    color: var(--color-grey-light-1);
+  }
+  
+  html {
+    font-size: 62.5%;
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  body {
+    background-color: var(--color-grey-light-2);
+    transition: all 0.5s;
+  }
